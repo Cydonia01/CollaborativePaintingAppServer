@@ -11,9 +11,6 @@
 # Ignore Gradle GUI config
 gradle-app.setting
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
 # Gradle cache
 .gradletasknamecache
 
@@ -28,6 +25,9 @@ bin/
 *.war
 *.ear
 *.class
+
+# IMPORTANT: Include Gradle wrapper jar (must be after *.jar exclusion)
+!gradle/wrapper/gradle-wrapper.jar
 
 # ===================================
 # IDE specific files
