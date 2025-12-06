@@ -28,6 +28,7 @@ bin/
 
 # IMPORTANT: Include Gradle wrapper jar (must be after *.jar exclusion)
 !gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
 
 # ===================================
 # IDE specific files

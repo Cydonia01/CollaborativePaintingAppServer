@@ -478,7 +478,7 @@ public class Server {
         totalConflictsLock.withLock(() -> totalConflicts++);
         
         // Tie-breaker: use lexicographic order of color
-        if (data.color.compareTo(currentState.color) > 0) {
+        if (data.color.compareTo(currentState.color) < 0) {
             pixelStatesLock.withLock(() -> 
                 pixelStates.put(data.pixelKey, new PixelState(data.color, data.logicalClock))
             );

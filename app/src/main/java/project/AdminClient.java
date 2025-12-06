@@ -73,15 +73,9 @@ public class AdminClient {
         Scanner scanner = new Scanner(System.in);
         
         // Get server details
-        System.out.print("Enter server IP (or press Enter for localhost): ");
-        String ip = scanner.nextLine().trim();
-        if (ip.isEmpty()) {
-            ip = "localhost";
-        }
-        
-        System.out.print("Enter server port (or press Enter for 5000): ");
-        String portStr = scanner.nextLine().trim();
-        int port = portStr.isEmpty() ? 5000 : Integer.parseInt(portStr);
+        String ip = "127.0.0.1";
+
+        int port = 5000;
         
         AdminClient client = new AdminClient(ip, port);
         
